@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#C2185B">
+<title>Riya Beauty Salon | Best Beauty Parlour in Hongasandra, Bengaluru</title>
+<meta name="description" content="Visit Riya Beauty Salon in Pragathi Nagar, Hongasandra, Bengaluru for expert haircuts, facials, bridal makeup, waxing, and more. Affordable prices, 5-star rated, hygienic environment. Call 089040 25883 to book your appointment today.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:#1e293b;background:#fff;-webkit-font-smoothing:antialiased}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45);text-decoration:none;transition:transform .2s}.wa-float:hover{transform:scale(1.1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-brand{font-weight:700;font-size:.98rem;color:#C2185B;max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-cta{background:#C2185B;color:#fff;padding:9px 20px;border-radius:6px;text-decoration:none;font-size:.82rem;font-weight:600;flex-shrink:0}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,#C2185Bf2 0%,#FCE4ECdd 50%,#C2185B99 100%)}
+.hero-inner{position:relative;z-index:2;padding:90px 5vw 60px;color:#fff;max-width:640px}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.hero-badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:5px 13px;border-radius:50px;font-size:.76rem;font-weight:500;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:clamp(.95rem,2.2vw,1.1rem);opacity:.88;line-height:1.68;margin-bottom:30px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-white{background:#fff;color:#C2185B;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.93rem}
+.btn-ghost{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:.93rem;font-weight:500}
+/* METRICS */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);background:#f8fafc;border-bottom:1px solid #e2e8f0}
+.metric{padding:20px 12px;text-align:center;border-right:1px solid #e2e8f0}
+.metric:last-child{border:none}
+.metric-val{font-size:1.6rem;font-weight:800;color:#C2185B;line-height:1}
+.metric-lbl{font-size:.7rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.07em;margin-top:4px}
+/* ABOUT */
+section{padding:60px 5vw}
+.container{max-width:960px;margin:0 auto}
+.sec-head{margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;margin-bottom:6px}
+.sec-head p{color:#64748b;font-size:.9rem}
+.about-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.about-text h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;color:#0f172a;margin-bottom:14px}
+.about-text p{color:#475569;line-height:1.8;margin-bottom:12px;font-size:.93rem}
+.hl-list{list-style:none;margin-top:14px}
+.hl-list li{padding:7px 0 7px 26px;position:relative;color:#334155;font-size:.87rem;border-bottom:1px solid #f1f5f9}
+.hl-list li:before{content:'✓';color:#F48FB1;position:absolute;left:0;font-weight:700}
+/* SERVICES */
+.services-bg{background:#f8fafc}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:#fff;border-radius:12px;padding:22px;border:1px solid #e2e8f0;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.svc-card:after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C2185B,#F48FB1)}
+.svc-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.svc-card h3{font-weight:700;color:#0f172a;margin-bottom:8px;font-size:.95rem}
+.svc-card p{color:#64748b;font-size:.87rem;line-height:1.6}
+/* PARALLAX */
+.parallax-strip{position:relative;min-height:320px;display:flex;align-items:center;overflow:hidden}
+.pstrip-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.pstrip-overlay{position:absolute;inset:0;background:linear-gradient(135deg,#C2185Bf0,#FCE4ECcc)}
+.pstrip-content{position:relative;z-index:2;padding:48px 5vw;color:#fff;max-width:560px}
+.pstrip-content h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:12px}
+.pstrip-content p{opacity:.82;margin-bottom:26px;font-size:.95rem}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+/* REVIEWS */
+.reviews-bg{background:#0f172a}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:32px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:22px}
+.rv-stars{color:#fbbf24;margin-bottom:8px}
+.rv-text{color:rgba(255,255,255,.65);font-size:.89rem;line-height:1.7;font-style:italic;margin-bottom:12px}
+.rv-author{color:rgba(255,255,255,.4);font-size:.8rem;font-weight:600}
+/* CTA */
+.cta-strip{background:linear-gradient(135deg,#F48FB1,#C2185B);color:#fff;padding:60px 5vw;text-align:center}
+.cta-strip h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:12px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.cb-w{background:#fff;color:#C2185B;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.9rem}
+.cb-o{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-size:.9rem}
+footer{background:#020617;color:#475569;text-align:center;padding:22px;font-size:.78rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Riya beauty salon</span>
+  <a href="https://wa.me/918904025883?text=Hi%20Riya%20Beauty%20Salon!%20I%20found%20you%20online%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20availability%3F" class="nav-cta">💬 WhatsApp</a>
+</nav>
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-badges">
+      <span class="hero-badge">⭐ 5/5</span>
+      <span class="hero-badge">Google Verified</span>
+      <span class="hero-badge">📍 Karnataka 560114, India</span>
+    </div>
+    <h1>Look Beautiful, Feel Confident — Every Single Day</h1>
+    <p>Hongasandra's most loved beauty salon offering expert care in a clean, friendly, and budget-friendly environment.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/918904025883?text=Hi%20Riya%20Beauty%20Salon!%20I%20found%20you%20online%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20availability%3F" class="btn-white">Book Your Appointment Now</a>
+      <a href="tel:089040 25883" class="btn-ghost">📞 Call Now</a>
+    </div>
+  </div>
+</div>
+<div class="metrics">
+  <div class="metric"><div class="metric-val">5/5</div><div class="metric-lbl">Rating</div></div>
+  <div class="metric"><div class="metric-val">✓</div><div class="metric-lbl">Verified</div></div>
+  <div class="metric"><div class="metric-val">100%</div><div class="metric-lbl">Committed</div></div>
+</div>
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEE7cwMl5IiGq6XfnIDxDA601rlDI1-h1rW7zw8Kn0c9lIRRp__SYewv0wEKiQuRntJ-aL2lSoX8sxjm_lQ4VycY5zZ5q9_E8Nh4cxhdgG8P-NgK1ii_fSA8wamg1B11CCzCOn6QsvKF737CBb-TKGjk7FAvo5SWTxQP2rVxj4lHRma9EiOVmMTmIUdmws6mGmQhT6QPUlc3Dc6wwtGo46v-DQHtKVJMAzbcu0HnTtwbZwbFca83MWqc5yTzNeeOO8OAjVfVOaZsBfNHpOpuE7G6VwWNVppm5WnWwh_2XO5D4Q&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" class="about-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600&q=85&fit=crop&auto=format'">
+      <div>
+        <div class="sec-head" style="margin-bottom:16px"><h2>About Riya beauty salon</h2></div>
+        <p style="color:#475569;line-height:1.8;margin-bottom:12px;font-size:.93rem">Welcome to Riya Beauty Salon, your trusted beauty destination in Pragathi Nagar, Hongasandra, Bengaluru. Led by the experienced and passionate Riya Madam, our salon is dedicated to making every client feel their absolute best. From trendy haircuts to complete beauty treatments, we combine skill, warmth, and affordability to deliver a truly exceptional salon experience.</p><p style="color:#475569;line-height:1.8;margin-bottom:12px;font-size:.93rem">At Riya Beauty Salon, we pride ourselves on maintaining a spotlessly clean and hygienic environment where every client is treated with care and personal attention. With a perfect 5-star rating and a loyal clientele, we go beyond just services — we educate and guide our clients on beauty routines tailored to their needs. Whether it's your first visit or your fiftieth, you'll always leave looking and feeling amazing.</p>
+        <ul class="hl-list"><li>⭐ Perfect 5-Star Rating with 83 Happy Customers</li><li>🧴 Clean, Hygienic &amp; Welcoming Salon Environment</li><li>💰 Premium Beauty Services at Budget-Friendly Prices</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services-bg">
+  <div class="container">
+    <div class="sec-head"><h2>Our Services</h2><p>Everything we offer</p></div>
+    <div class="svc-grid"><div class="svc-card"><h3>Haircut &amp; Styling</h3><p>Trendy and classic haircuts including popular styles like the Butterfly Cut, crafted with precision to suit your face and personality.</p></div><div class="svc-card"><h3>Facial &amp; Skin Care</h3><p>Rejuvenating facial treatments using quality products to brighten, cleanse, and nourish your skin for a healthy natural glow.</p></div><div class="svc-card"><h3>Hair Coloring &amp; Treatment</h3><p>Professional hair coloring, highlights, and deep conditioning treatments to keep your hair vibrant, strong, and beautiful.</p></div><div class="svc-card"><h3>Threading &amp; Eyebrow Shaping</h3><p>Precise eyebrow threading and shaping to frame your face perfectly, done with expert hands for a clean and defined look.</p></div><div class="svc-card"><h3>Waxing &amp; Hair Removal</h3><p>Smooth and effective waxing services for full body, arms, legs, and more using hygienic, skin-friendly materials.</p></div><div class="svc-card"><h3>Bridal &amp; Party Makeup</h3><p>Stunning makeup looks for weddings, engagements, and special occasions crafted to make you shine on your most important day.</p></div><div class="svc-card"><h3>Manicure &amp; Pedicure</h3><p>Relaxing and thorough manicure and pedicure services to keep your hands and feet soft, clean, and beautifully groomed.</p></div><div class="svc-card"><h3>Hair Spa &amp; Deep Conditioning</h3><p>Luxurious hair spa treatments to repair damage, reduce frizz, and restore shine and softness to your hair.</p></div></div>
+  </div>
+</section>
+<div class="parallax-strip">
+  <div class="pstrip-bg" id="ps"></div>
+  <div class="pstrip-overlay"></div>
+  <div class="pstrip-content">
+    <h2>Let's Work Together</h2>
+    <p>shop, K no, Riya beauty Salon, Sathish Reddy layout, Ground floor, 11th Main Rd, Pragathi Nagar, Maruthi Layout, Hongasandra, Bengaluru, Karnataka 560114, India · Monday: 9:00 AM – 8:30 PM | Tuesday: 9:30 AM – 8:30 PM | Wednesday: 9:30 AM – 8:30 PM | Thursday: 9:30 AM – 8:30 PM | Friday: 8:30 AM – 8:30 PM | Saturday: 9:30 AM – 8:30 PM | Sunday: 9:30 AM – 8:30 PM</p>
+    <a href="https://wa.me/918904025883?text=Hi%20Riya%20Beauty%20Salon!%20I%20found%20you%20online%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20availability%3F" style="background:#fff;color:#C2185B;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block">💬 WhatsApp Now</a>
+  </div>
+</div>
+<section><div class="container"><div class="sec-head"><h2>Our Work</h2><p>A glimpse of what we do</p></div><div class="gallery-grid"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEE7cwMl5IiGq6XfnIDxDA601rlDI1-h1rW7zw8Kn0c9lIRRp__SYewv0wEKiQuRntJ-aL2lSoX8sxjm_lQ4VycY5zZ5q9_E8Nh4cxhdgG8P-NgK1ii_fSA8wamg1B11CCzCOn6QsvKF737CBb-TKGjk7FAvo5SWTxQP2rVxj4lHRma9EiOVmMTmIUdmws6mGmQhT6QPUlc3Dc6wwtGo46v-DQHtKVJMAzbcu0HnTtwbZwbFca83MWqc5yTzNeeOO8OAjVfVOaZsBfNHpOpuE7G6VwWNVppm5WnWwh_2XO5D4Q&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEErLsFNACP98prrDbsH-XgkekwlJGSKvaegkEsk0baINX3rQrjnY17QfJbfRfOgRUKa-q_ejH9KOQcRNaZuCDUBNpv2SI-hwsxZ7aNKVGpvhfl8IphYxWU03yVzLOyv898DRJdiJ8ltwvQLJbKeLfEuTn4lSma-PfjJPwNUU1y4lEn4qpBxVTSlEfDDOLP6QB6WEgxNhSrhrOgQ1QZKw3hYiUMqKYzC4fjDrO-I3MnvcnQpn0z8nw4jPIL2oBncj4Ke9dUH8ySxONrk6j3eW6DwZpzY0Cm8TuKU9AnqkTv_3w&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEHrvzA1Os7e2h6rdWkrn6EN94uDnKJndb_lRTZglMK1e4sfdveQKNEIKPPQhGV6Sb3rw6WPj0U7huxmN0yTmfocDOpkT0azPowMQPBj9memqRxF9V4dRdo-r1KrZX-F8wP5FMe6PQgtSSCTri_tPc1s96Q7N5AfEvtYJHVli1sEarNzUHnDpql1qcVikiTS2mHTKAIvhzYQGmJDtp24xEZa5oFNVvcMp-6NyiAsyUODc_BRFw9hwfIb2oyKn7lSa8Q-lYunUhU3EkThhLC8sFj7HnM2OyrjanHaC8CvwcKFlUtzoo_Gyz-ZDP32lHzUVuF3Gc9f2xG2U73w1Ue8G04nlx24JYNOGib3zuhzGrV2AhCumS94QJXOJISjS0IouAca3ARy45ExzdLz7gKUfPlrZwt54EZg3w62BNXCzhNd2Q&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGZAuQAOBFOQfzErRZgiOtn1zoXGWBLFsmc6F6Fti-JDExba3FrsWxJukOkjuvKS-g_z0TzCk6mTzJVVhLgBLkWYPNlyXVt6LDFkvRRyPOhOp22BFeTf3l1KfGVYB2Dl7sRHShyxrj7UKJOTZAiQh2KWMIfVTYuR7ZnKaBA0QZWzxqKUE8JvFSLs5K5eCvqb2fdHlIE3xyF89eB676xjeK7--V24dKoTDE5nb5taAjr1h8v0bKGxDRbBGVlcLmVgd2iUl344JnTYcZAUojQigrxur7MaUkxtut5n2Rib24mqA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEFwBLuB8T-IbpZ4DlFEbFGmIj26LvH9dDaWj7WZuzXj3G4dibMIWzZXcZBTAuX47-diBKlgB-P0IrRCYDtFqA225EX2bK2GWBDGTcVnHRQpDVPvgGXs5gVUULypcHbihXqQZ4wExFmBF234uoNLj5M5MOJY4XZ5ShnDRFvKLglwUHfIsAVtisVlMwfzkH7Hcg0nVhIiraHiykIl3H6_M7sdWGsLPwiOp7BNnPVyMG1rT4_8euwBkHvj5reuAS4rxl-0p_Q2A7ETfD6wwCeB_u_y110c8b66eHJde_TbeDqwKr1ecDblapKQqMg1iUyba9wQiSK8EPpaw7JJzvMs9xjAiV_ns_i8TxizUIx2QUX-5hFRaBWcv2PNtabra7q2O4qXERnEeZTn6JkGFngf_ewc5P5eEGf99cPphUDEqUE&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Riya beauty salon" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+<section class="reviews-bg">
+  <div class="container">
+    <div class="sec-head"><h2 style="color:#fff">What People Say</h2><p style="color:rgba(255,255,255,.4)">Real reviews from our customers</p></div>
+    <div class="rv-grid"><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Very good service by Riya Madam. She is well experienced and gives great service. Budget friendly too!"</p><div class="rv-author">— Sneha D</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Excellent service in a very clean and hygienic environment and very friendly service. Best salon experience ever!"</p><div class="rv-author">— Aruna Alex</div></div><div class="rv-card"><div class="rv-stars">★★★★☆</div><p class="rv-text">"I got a very nice Butterfly haircut done. It was really a nice experience. Thank you so much!"</p><div class="rv-author">— Shreya Kamble</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Very nice service they provide and they guide a lot of new things about beauty care. Highly recommended!"</p><div class="rv-author">— Manvith G</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Good service compared to other beauty parlours in this location. Very happy with the service."</p><div class="rv-author">— Jackline Issac</div></div></div>
+  </div>
+</section>
+<div class="cta-strip">
+  <div class="container">
+    <h2>Ready to Connect?</h2>
+    <p style="opacity:.82;max-width:440px;margin:0 auto;font-size:.95rem">shop, K no, Riya beauty Salon, Sathish Reddy layout, Ground floor, 11th Main Rd, Pragathi Nagar, Maruthi Layout, Hongasandra, Bengaluru, Karnataka 560114, India</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/918904025883?text=Hi%20Riya%20Beauty%20Salon!%20I%20found%20you%20online%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20availability%3F" class="cb-w">💬 WhatsApp</a>
+      <a href="tel:089040 25883" class="cb-o">📞 089040 25883</a>
+      <a href="https://maps.google.com/?cid=7610318179101804304" class="cb-o">📍 Directions</a>
+    </div>
+  </div>
+</div>
+<footer>© 2026 Riya beauty salon · shop, K no, Riya beauty Salon, Sathish Reddy layout, Ground floor, 11th Main Rd, Pragathi Nagar, Maruthi Layout, Hongasandra, Bengaluru, Karnataka 560114, India</footer>
+<a href="https://wa.me/918904025883?text=Hi%20Riya%20Beauty%20Salon!%20I%20found%20you%20online%20and%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20availability%3F" class="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+if(window.innerWidth>768){
+  const hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){const r=ps.closest('.parallax-strip').getBoundingClientRect();ps.style.transform='translateY('+(r.top*.2)+'px)'}
+  },{passive:true});
+}
+</script>
+</body></html>
